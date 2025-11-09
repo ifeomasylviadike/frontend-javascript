@@ -7,3 +7,6 @@ interface Teacher {
   [key: string]: any; // allows additional dynamic properties like "contract"
 }
 
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
