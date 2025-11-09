@@ -11,14 +11,13 @@ interface Director extends Teacher {
   numberOfReports: number;
 }
 
-// Define the interface for the function
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-// Define the function (using destructuring and named function)
-function printTeacher({ firstName, lastName }: { firstName: string; lastName: string }): string {
-  return `${firstName.charAt(0)}. ${lastName}`;
+function printTeacher(firstName: string, lastName: string): string {
+  firstName = firstName.charAt(0); // modify firstName before returning
+  return `${firstName}. ${lastName}`;
 }
 
 
