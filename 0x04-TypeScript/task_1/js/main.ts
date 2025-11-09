@@ -6,3 +6,4 @@ interface Teacher {
   location: string;
   [key: string]: any; // allows additional dynamic properties like "contract"
 }
+
